@@ -16,4 +16,4 @@ jobs:
         run: docker build -t flask-ngrok .
 
       - name: Run Docker container
-        run: docker run --rm -e NGROK_TOKEN=${{ secrets.NGROK_TOKEN }} flask-ngrok
+        run: docker run --rm -e NGROK_TOKEN=${{ secrets.NGROK_TOKEN }} flask-ngrok 
